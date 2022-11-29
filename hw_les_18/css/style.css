@@ -1,10 +1,10 @@
 [class*="col-"] {
-width: 100%;
+    width: 100%;
 }
 @media only screen and (min-width: 600px) {
 [class*="col-"] {
-float: left;
-padding: 15px;
+    float: left;
+    padding: 15px;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -21,27 +21,38 @@ padding: 15px;
 }
 
 .header {
-  background-image: url("../afbeeldingen/haaften.jpg");
-  height: 300px;
-  max-width: 100%;
-  color: white;
-  font-size: 20pt;
-  margin-bottom: 10pt;
+    background-image: url("../afbeeldingen/haaften_mob.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    object-fit: contain;
+    max-width: 100%;
+    color: white;
+    font-size: 20pt;
+    margin-bottom: 10pt;
 }
-
+@media only screen and (min-width: 600px) {
+  .header {
+    background-image: url("../afbeeldingen/haaften.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    max-width: 100%;
+    color: white;
+    font-size: 20pt;
+    margin-bottom: 10pt;
+}
+}
 .header h1 {
-  padding-left: 50px;
+    padding-left: 50px;
 }
 
 .bezienswaardigheden img{
-  display: inline;
-  float: right;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(10px 11px 12px green);
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  padding-left: 15px;
+    display: inline;
+    float: right;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-left: 15px;
 } @media only screen and (min-width: 600px) {
   .bezienswaardigheden img {
     float: right;
@@ -52,49 +63,79 @@ padding: 15px;
 }
 
 .bezienswaardigheden {
-  background-color: #a6bd80;
-  padding: 20px;
-  margin-bottom: 10px;
-  position: relative;
+    background-color: #414d3b;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    color: white;
 } @media only screen and (min-width: 600px) {
 .bezienswaardigheden {
-  background-color: #a6bd80;
-  padding: 20px;
-  padding-bottom: 100px;
-  margin-bottom: 10px;
-  position: relative;
+    background-color: #a6bd80;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    color: black;
 }
+}
+
+.bezienswaardigheden p {
+    max-width: 100%;
+    text-align: justify;
 }
 
 body {
     font-family: 'PT Sans', sans-serif;
     font-size: 10pt;
+    max-width: 100%;
+}
+
+.credits {
+    font-size: 8pt;
 }
 
 footer {
+    display: block;
+    background-color: #777160;
+    position:  relative ;
+    height: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+  } @media only screen and (min-width: 600px) {
+  footer {
     display: block;
     background-color: #74863b;
     position:  relative ;
     height: 50px;
     width: 100%;
     text-align: center;
-  }
+    color: black;
+    max-width: 100%;
+    }
+}
 
 h1, h2 {
-font-family: 'Permanent Marker', cursive;
-text-align: center;
-} @media only screen and (min-width: 600px) {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+  } @media only screen and (min-width: 600px) {
 h1, h2 {
-font-family: 'Permanent Marker', cursive;
-text-align: justify;
-}
-}
-
-.bezienswaardigheden p {
-  max-width: 100%;
-  text-align: justify;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    }
 }
 
-.bezienswaardigheden h1, h2 {
-  text-align: center;
+
+a:link {
+    color: #777160;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: white;
 }
