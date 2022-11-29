@@ -36,26 +36,36 @@ padding: 15px;
 .bezienswaardigheden img{
   display: inline;
   float: right;
-  margin: 10px;
   width: 100%;
   height: auto;
+  filter: drop-shadow(10px 11px 12px green);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  padding-left: 15px;
 } @media only screen and (min-width: 600px) {
   .bezienswaardigheden img {
-    display: inline;
     float: right;
-    margin: 10px;
     width: auto;
-    height: auto;
+    height: 100%;
+    filter: none;
   }
 }
 
 .bezienswaardigheden {
   background-color: #a6bd80;
   padding: 20px;
-  margin: 10pt;
-  padding-bottom: 50px;
-
+  margin-bottom: 10px;
+  position: relative;
+} @media only screen and (min-width: 600px) {
+.bezienswaardigheden {
+  background-color: #a6bd80;
+  padding: 20px;
+  padding-bottom: 100px;
+  margin-bottom: 10px;
+  position: relative;
 }
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     font-size: 10pt;
@@ -65,13 +75,26 @@ footer {
     display: block;
     background-color: #74863b;
     position:  relative ;
-
     height: 50px;
     width: 100%;
-
     text-align: center;
   }
 
 h1, h2 {
 font-family: 'Permanent Marker', cursive;
+text-align: center;
+} @media only screen and (min-width: 600px) {
+h1, h2 {
+font-family: 'Permanent Marker', cursive;
+text-align: justify;
+}
+}
+
+.bezienswaardigheden p {
+  max-width: 100%;
+  text-align: justify;
+}
+
+.bezienswaardigheden h1, h2 {
+  text-align: center;
 }
